@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify, render_template_string
 import gspread
 import os
 from datetime import datetime
-
+import json 
 app = Flask(__name__)
 
 # --- CONFIGURATION (À REMPLACER AVEC VOS DONNÉES) ---
@@ -231,3 +231,4 @@ if __name__ == '__main__':
     # Cette ligne est pour les tests locaux.
 
     app.run(debug=True)
+
