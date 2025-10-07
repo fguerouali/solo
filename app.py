@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # --- CONFIGURATION (À REMPLACER AVEC VOS DONNÉES) ---
 # L'ID de votre Google Sheet (extrait de son URL)
-SPREADSHEET_ID = "VOTRE_ID_DE_FEUILLE_ICI" 
+SPREADSHEET_ID = "1gRyx4jhmrPmOuZWxS7FRMXNlWTM4GRJXoT4s2bRWuy4" 
 STOCK_ALERT_THRESHOLD = 5.0 
 
 # Récupération des identifiants Gspread depuis l'environnement Render
@@ -229,4 +229,5 @@ def handle_loss():
 if __name__ == '__main__':
     # Ne pas utiliser cette ligne pour Render. Render utilise Gunicorn.
     # Cette ligne est pour les tests locaux.
+
     app.run(debug=True)
